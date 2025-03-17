@@ -1,4 +1,4 @@
-
+import './globals.css';
 
 export const metadata = {
   title: "P-Hacking Interactive Demo",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-50">
         {children}
       </body>
     </html>

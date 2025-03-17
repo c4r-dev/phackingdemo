@@ -108,7 +108,7 @@ export default function PHackingDemo() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg">
-      <h1 className="text-3xl font-bold mb-6 text-blue-800">P-Value Hunting: An Interactive Demonstration</h1>
+      <h1 className="text-3xl font-bold mb-6 text-[#1e40af]">P-Value Hunting: An Interactive Demonstration</h1>
       
       {step === 0 && (
         <div className="space-y-6">
