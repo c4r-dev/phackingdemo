@@ -116,12 +116,12 @@ export default function PHackingDemo() {
             Welcome to this interactive demonstration about statistical significance and p-values.
           </p>
           <p>
-            Imagine you're a researcher testing if a new supplement improves test scores.
+            Imagine you&apos;re a researcher testing if a new supplement improves test scores.
             You randomly assign participants to either take the supplement (Group A) or a placebo (Group B).
           </p>
           <p className="font-medium">
-            The scientific standard is to consider a result "statistically significant" if the p-value is less than 0.05
-            (meaning there's less than a 5% chance the observed difference happened by random chance).
+            The scientific standard is to consider a result &quot;statistically significant&quot; if the p-value is less than 0.05
+            (meaning there&apos;s less than a 5% chance the observed difference happened by random chance).
           </p>
           <button 
             onClick={() => setStep(1)} 
@@ -135,11 +135,11 @@ export default function PHackingDemo() {
       {step === 1 && (
         <div className="space-y-6">
           <p className="text-lg font-medium">
-            Let's run our experiment to see if our supplement works!
+            Let&apos;s run our experiment to see if our supplement works!
           </p>
           <p>
             Press the button below to analyze the data from our experiment. 
-            If you get a p-value less than 0.05, you can publish your finding! If not, don't worry...
+            If you get a p-value less than 0.05, you can publish your finding! If not, don&apos;t worry...
             you can always try a different approach to the analysis.
           </p>
           
@@ -183,19 +183,19 @@ export default function PHackingDemo() {
           
           {showRealityCheck && (
             <div className="space-y-6 p-6 border-2 border-red-500 rounded-md bg-red-50">
-              <h2 className="text-2xl font-bold text-red-600">The Rug Pull: Here's What Actually Happened</h2>
+              <h2 className="text-2xl font-bold text-red-600">The Rug Pull: Here&apos;s What Actually Happened</h2>
               <p className="font-medium">
-                Congratulations! You found {significantFindings} "statistically significant" results out of {trialCount} trials.
+                Congratulations! You found {significantFindings} &quot;statistically significant&quot; results out of {trialCount} trials.
               </p>
               <p>
-                <span className="font-bold">But here's the truth:</span> All of the data was completely random. There was NO real difference between the groups.
+                <span className="font-bold">But here&apos;s the truth:</span> All of the data was completely random. There was NO real difference between the groups.
               </p>
               <p>
                 This is p-hacking in action. By running multiple analyses and only reporting the ones that show statistical significance, 
-                you can "find" effects that don't really exist.
+                you can &quot;find&quot; effects that don&apos;t really exist.
               </p>
               <p>
-                In this demonstration, approximately 5% of the trials showed "significant" results purely by chance - 
+                In this demonstration, approximately 5% of the trials showed &quot;significant&quot; results purely by chance - 
                 exactly what the p &lt; 0.05 threshold predicts for random data!
               </p>
               
@@ -229,10 +229,10 @@ export default function PHackingDemo() {
                 <span className="font-bold">Common p-hacking techniques include:</span>
               </p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Collecting data until you get a significant result ("optional stopping")</li>
+                <li>Collecting data until you get a significant result (&quot;optional stopping&quot;)</li>
                 <li>Analyzing many different variables but only reporting the significant ones</li>
-                <li>Trying multiple statistical tests and only reporting those that "work"</li>
-                <li>Excluding "outliers" that contradict your hypothesis</li>
+                <li>Trying multiple statistical tests and only reporting those that &quot;work&quot;</li>
+                <li>Excluding &quot;outliers&quot; that contradict your hypothesis</li>
                 <li>Slicing data in different ways until you find significance</li>
               </ul>
               
@@ -259,7 +259,7 @@ export default function PHackingDemo() {
               
               <p>
                 This demonstration shows why a single p-value below 0.05 should never be treated as definitive proof. 
-                With enough attempts, you'll eventually find "significance" in completely random data.
+                With enough attempts, you&apos;ll eventually find &quot;significance&quot; in completely random data.
               </p>
               
               <button 
