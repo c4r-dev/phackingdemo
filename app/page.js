@@ -87,9 +87,7 @@ export default function PHackingDemo() {
       if (count >= 20) {
         clearInterval(interval);
         setIsRunning(false);
-        // setTimeout(() => {
-          setShowRealityCheck(true);
-        // }, 1000);
+        setShowRealityCheck(true);
       }
     }, 300);
   };
